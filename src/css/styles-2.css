@@ -1,0 +1,155 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+/* Sections style */
+@import url('./header.css');
+
+@import url('./badges.css');
+@import url('./back-link.css');
+
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.snack-container {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+/* Form styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input styles */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 200;
+  color: #333;
+  text-align: left;
+}
+
+input[type='number'] {
+  width: 360px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type='number']:hover {
+  border: 1px solid #000;
+}
+
+input[type='number']:active {
+  border: 1px solid #4e75ff;
+}
+
+/* Fieldset styles */
+fieldset {
+  width: 360px;
+  height: 62px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 25px 10px 15px 10px;
+  position: relative;
+}
+
+legend {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  padding: 0 5px;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+/* Radio button styles */
+fieldset label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #808080;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type='radio']:focus {
+  border: 1px solid #4e75ff;
+}
+
+input[type='radio']:checked::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #4e75ff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Button styles */
+button[type='submit'] {
+  width: 360px;
+  height: 40px;
+  background-color: #4169e1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type='submit']:hover {
+  background-color: #6c8cff;
+}
+
+/* Back link styles */
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #4169e1;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
